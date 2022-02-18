@@ -1,9 +1,19 @@
 Le projet du Jeu de la mort qui tue sa mère :
   Player constructor:
-    ☐ properties for an player @started(22-02-18 16:53)
-    ☐ methods for player
+    ✔ properties for an player
+    ✔ methods for player 
   Place constructor:
-    ☐ properties for a Place
-    ☐ methods fora Place
+    ✔ properties for a Place 
+    ✔ methods for a Place 
+    ☐ add method getlastItem()
   create helper:
-    ☐ make some fancy things to diplay
+    ✔ make some fancy things to diplay 
+  create GameControl:
+    ✔ methods 
+    ☐ Add get function (for got an object in place)
+
+
+  
+TODO:
+  ☐ when an object is put in the inventory make it disappear from the inventory of the place
+  ☐ If the object does not exist return a message

@@ -2,9 +2,9 @@ class Player {
   constructor(name, health) {
     this.name = name;
     this.health = health;
-    this.newLine = spacer.newLine()
+    this.newLine = spacer.newLine();
     this.items = [];
-    //this.place = null
+    this.place = null;
   }
   getNameInfo() {
     return this.name;
@@ -15,7 +15,7 @@ class Player {
   getTitleInfo = () => `${this.getNameInfo()} ${this.getHealthInfo()}`;
 
   getItemsInfo() {
-    let itemsString = "Items:" + "\n";
+    let itemsString = "Items:" + this.newLine;
     this.items.forEach((item, i) => {
       itemsString += "   - " + item + "\n";
     });
@@ -35,5 +35,12 @@ class Player {
   }
   showInfo(character) {
     console.log(this.getInfo(character));
+  }
+
+  setPlace(destination) {
+    this.place = destination;
+  }
+  getPlace() {
+    return this.place;
   }
 }
